@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "baronNeue";
+  src: url("/Baron Neue.bd3ef82a.otf");
+}
+@font-face {
+  font-family: "baronNeueBold";
+  src: url("/Baron Neue Black.8a918820.otf");
+}
+html {
+  font-size: 10px;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 6.1rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 3.1rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+.landing {
+  background: url(/landing-backdrop.2958cb22.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landing .navBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: white;
+  font-family: "baronNeue", sans-serif;
+  width: 100%;
+  border-top: 6px solid #57D0AF;
+  height: 8%;
+  background-color: black;
+  transition: ease 1s;
+}
+.landing .navBar .navButtons {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10%;
+  width: 40%;
+  transform: translate(3%, 80%);
+}
+.landing .landingName {
+  font-family: "baronNeue", sans-serif;
+  position: absolute;
+  transform: translateY(200%);
+}
+.landing .landingName h1 {
+  color: white;
+  line-height: 90%;
+}
+.landing .landingName h4 {
+  padding-top: 1%;
+  color: #E2E2E2;
+  opacity: 0.8;
+}
+
+.content {
+  background: white;
+  height: 1080px;
+}
+
+/*# sourceMappingURL=/style.e0c02e61.css.map */
