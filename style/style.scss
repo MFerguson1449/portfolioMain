@@ -66,6 +66,7 @@ h5 {
       height: 8%;
       background-color: rgba(0, 0, 0, 1);
       transition: ease 1s;
+      z-index: 2;
       .navButtons {
          display: grid;
          align-items: center;
@@ -73,6 +74,15 @@ h5 {
          grid-gap: 10%;
          width: 40%;
          transform: translate(3%, 80%);
+      }
+      .navName {
+         position: absolute;
+         right: -50%;
+         bottom: 38%;
+         border-right: 0.4em solid $mainBlue;
+         padding-right: 0.5%;
+         transition: ease 0.6s;
+         height: 29px;
       }
    }
    .landingName {

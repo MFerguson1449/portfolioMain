@@ -62,6 +62,7 @@ h5 {
   height: 8%;
   background-color: black;
   transition: ease 1s;
+  z-index: 2;
 }
 .landing .navBar .navButtons {
   display: grid;
@@ -70,6 +71,15 @@ h5 {
   grid-gap: 10%;
   width: 40%;
   transform: translate(3%, 80%);
+}
+.landing .navBar .navName {
+  position: absolute;
+  right: -50%;
+  bottom: 38%;
+  border-right: 0.4em solid #57D0AF;
+  padding-right: 0.5%;
+  transition: ease 0.6s;
+  height: 29px;
 }
 .landing .landingName {
   font-family: "baronNeue", sans-serif;
