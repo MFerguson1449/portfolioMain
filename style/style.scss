@@ -31,6 +31,7 @@ html {
    font-size: 10px;
    font-family: $mainFont;
    text-align: center;
+   scroll-behavior: smooth;
 }
 
 * {
@@ -63,8 +64,44 @@ h6 {
    font-size: 1.6rem;
 }
 
+a {
+   text-decoration: none;
+   color: white;
+   display: inline-block;
+}
 
-.landing {
+a:hover, a:active {
+   color: $mainBlue;
+}
+
+a:visited, a:link {
+   color: white;
+}
+
+a:after {    
+   background: none repeat scroll 0 0 transparent;
+   bottom: 0;
+   content: "";
+   display: block;
+   height: 2px;
+   left: 50%;
+   position: absolute;
+   background: $mainBlue;
+   transition: 0.3s ease 0s, right 1s ease 0s;
+   width: 0;
+ }
+
+ a:hover:after { 
+   width: 100%; 
+   left: 0; 
+ }
+ @media screen and (max-height: 300px) {
+    ul {
+       margin-top: 40px;
+    }
+ }
+
+#landing {
    background: url(../img/landing-backdrop.png) no-repeat center center fixed;
    -webkit-background-size: cover;
    -moz-background-size: cover;
@@ -90,12 +127,21 @@ h6 {
       z-index: 2;
       letter-spacing: 2px;
       .navButtons {
-         display: grid;
-         align-items: center;
-         grid-template-columns: 1fr 1fr 1fr 1fr;
-         grid-gap: 1%;
          width: 40%;
-         transform: translate(3%, 120%);
+         ul { 
+            padding: 0; 
+            list-style: none; 
+            display: table;
+            text-align: center;
+          }
+          li { 
+            display: table-cell; 
+            position: relative; 
+            padding: 20px 0;
+          }
+          a {
+             margin: 0 50px; // !Only underline the text?
+          }
       }
       .navName {
          position: absolute;
@@ -127,4 +173,13 @@ h6 {
 .content {
    background: white;
    height: 1080px;
+   // Temp Start //
+   #skills, #experience, #contact {
+      height: 1000px;
+      padding-top: 100px;
+   }
+   #skills {
+      margin-top: 250px;
+   }
+   // Temp End //
 }

@@ -128,7 +128,7 @@ window.onscroll = function () {
 };
 
 function navColor() {
-  if (document.documentElement.scrollTop > 800) {
+  if (document.documentElement.scrollTop > 700) {
     navBar.style.backgroundColor = 'rgba(0, 0, 0, 1)';
     navName.style.right = '1%';
   } else {
@@ -164,7 +164,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38172" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57401" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
