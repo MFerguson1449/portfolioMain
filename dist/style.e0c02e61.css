@@ -1,10 +1,20 @@
 @font-face {
-  font-family: "baronNeue";
-  src: url("/Baron Neue.bd3ef82a.otf");
+  font-family: "baron_neueblack";
+  src: url("/baron_neue_black-webfont.3ce223b3.woff2") format("woff2"), url("/baron_neue_black-webfont.c2108b4c.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-  font-family: "baronNeueBold";
-  src: url("/Baron Neue Black.8a918820.otf");
+  font-family: "baron_neuebold";
+  src: url("/baron_neue_bold-webfont.afd01261.woff2") format("woff2"), url("/baron_neue_bold-webfont.cd10f6a2.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "baron_neueregular";
+  src: url("/baron_neue-webfont.e648e8da.woff2") format("woff2"), url("/baron_neue-webfont.945d03ac.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 html {
   font-size: 10px;
@@ -38,6 +48,10 @@ h5 {
   font-size: 2rem;
 }
 
+h6 {
+  font-size: 1.6rem;
+}
+
 .landing {
   background: url(/landing-backdrop.2958cb22.png) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -56,35 +70,36 @@ h5 {
   top: 0;
   left: 0;
   color: white;
-  font-family: "baronNeue", sans-serif;
+  font-family: "baron_neueregular", sans-serif;
   width: 100%;
   border-top: 6px solid #57D0AF;
   height: 8%;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0);
   transition: ease 1s;
   z-index: 2;
+  letter-spacing: 2px;
 }
 .landing .navBar .navButtons {
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 10%;
+  grid-gap: 1%;
   width: 40%;
-  transform: translate(3%, 80%);
+  transform: translate(3%, 120%);
 }
 .landing .navBar .navName {
   position: absolute;
   right: -50%;
-  bottom: 38%;
-  border-right: 0.4em solid #57D0AF;
+  bottom: 26%;
   padding-right: 0.5%;
   transition: ease 0.6s;
   height: 29px;
 }
 .landing .landingName {
-  font-family: "baronNeue", sans-serif;
+  font-family: "baron_neuebold", sans-serif;
   position: absolute;
   transform: translateY(200%);
+  letter-spacing: 2px;
 }
 .landing .landingName h1 {
   color: white;

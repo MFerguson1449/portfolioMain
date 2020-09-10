@@ -130,7 +130,7 @@ window.onscroll = function () {
 function navColor() {
   if (document.documentElement.scrollTop > 800) {
     navBar.style.backgroundColor = 'rgba(0, 0, 0, 1)';
-    navName.style.right = '2%';
+    navName.style.right = '1%';
   } else {
     navBar.style.backgroundColor = 'rgba(0, 0, 0, 0)';
     navName.style.right = '-50%';
@@ -164,7 +164,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "23606" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38172" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

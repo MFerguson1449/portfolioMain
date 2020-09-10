@@ -10,7 +10,7 @@ window.onscroll = function() {
 function navColor() {
    if (document.documentElement.scrollTop > 800) {
       navBar.style.backgroundColor = 'rgba(0, 0, 0, 1)';
-      navName.style.right = '2%';
+      navName.style.right = '1%';
     } else { 
        navBar.style.backgroundColor = 'rgba(0, 0, 0, 0)';
        navName.style.right = '-50%';

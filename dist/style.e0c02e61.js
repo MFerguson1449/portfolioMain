@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./fonts\\Baron Neue.otf":[["Baron Neue.bd3ef82a.otf","style/fonts/Baron Neue.otf"],"style/fonts/Baron Neue.otf"],"./fonts\\Baron Neue Black.otf":[["Baron Neue Black.8a918820.otf","style/fonts/Baron Neue Black.otf"],"style/fonts/Baron Neue Black.otf"],"./..\\img\\landing-backdrop.png":[["landing-backdrop.2958cb22.png","img/landing-backdrop.png"],"img/landing-backdrop.png"],"_css_loader":"C:/Users/lukar/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"C:/Users/lukar/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./fonts\\baron_neue_black-webfont.woff2":[["baron_neue_black-webfont.3ce223b3.woff2","style/fonts/baron_neue_black-webfont.woff2"],"style/fonts/baron_neue_black-webfont.woff2"],"./fonts\\baron_neue_black-webfont.woff":[["baron_neue_black-webfont.c2108b4c.woff","style/fonts/baron_neue_black-webfont.woff"],"style/fonts/baron_neue_black-webfont.woff"],"./fonts\\baron_neue_bold-webfont.woff2":[["baron_neue_bold-webfont.afd01261.woff2","style/fonts/baron_neue_bold-webfont.woff2"],"style/fonts/baron_neue_bold-webfont.woff2"],"./fonts\\baron_neue_bold-webfont.woff":[["baron_neue_bold-webfont.cd10f6a2.woff","style/fonts/baron_neue_bold-webfont.woff"],"style/fonts/baron_neue_bold-webfont.woff"],"./fonts\\baron_neue-webfont.woff2":[["baron_neue-webfont.e648e8da.woff2","style/fonts/baron_neue-webfont.woff2"],"style/fonts/baron_neue-webfont.woff2"],"./fonts\\baron_neue-webfont.woff":[["baron_neue-webfont.945d03ac.woff","style/fonts/baron_neue-webfont.woff"],"style/fonts/baron_neue-webfont.woff"],"./..\\img\\landing-backdrop.png":[["landing-backdrop.2958cb22.png","img/landing-backdrop.png"],"img/landing-backdrop.png"],"_css_loader":"C:/Users/lukar/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"C:/Users/lukar/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "23606" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38172" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

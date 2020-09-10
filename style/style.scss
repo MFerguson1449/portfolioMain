@@ -1,13 +1,30 @@
 @import '_variables.scss';
 
 @font-face {
-   font-family: "baronNeue";
-   src: url("./fonts/Baron\ Neue.otf");
+   font-family: 'baron_neueblack';
+   src: url('./fonts/baron_neue_black-webfont.woff2') format('woff2'),
+        url('./fonts/baron_neue_black-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+
 }
 
 @font-face {
-   font-family: "baronNeueBold";
-   src: url("./fonts/Baron\ Neue\ Black.otf");
+   font-family: 'baron_neuebold';
+   src: url('./fonts/baron_neue_bold-webfont.woff2') format('woff2'),
+        url('./fonts/baron_neue_bold-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+
+}
+
+@font-face {
+   font-family: 'baron_neueregular';
+   src: url('./fonts/baron_neue-webfont.woff2') format('woff2'),
+        url('./fonts/baron_neue-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+
 }
 
 html { 
@@ -42,6 +59,10 @@ h5 {
    font-size: 2rem;
 }
 
+h6 {
+   font-size: 1.6rem;
+}
+
 
 .landing {
    background: url(../img/landing-backdrop.png) no-repeat center center fixed;
@@ -64,31 +85,33 @@ h5 {
       width: 100%;
       border-top: 6px solid $mainBlue;
       height: 8%;
-      background-color: rgba(0, 0, 0, 1);
+      background-color: rgba(0, 0, 0, 0);
       transition: ease 1s;
       z-index: 2;
+      letter-spacing: 2px;
       .navButtons {
          display: grid;
          align-items: center;
          grid-template-columns: 1fr 1fr 1fr 1fr;
-         grid-gap: 10%;
+         grid-gap: 1%;
          width: 40%;
-         transform: translate(3%, 80%);
+         transform: translate(3%, 120%);
       }
       .navName {
          position: absolute;
          right: -50%;
-         bottom: 38%;
-         border-right: 0.4em solid $mainBlue;
+         bottom: 26%;
          padding-right: 0.5%;
          transition: ease 0.6s;
          height: 29px;
       }
    }
    .landingName {
-      font-family: $styleFont;
+      font-family: $styleFontBold;
       position: absolute;
       transform: translateY(200%);
+      letter-spacing: 2px;
+      
       h1 {
          color: white;
          line-height: 90%;
