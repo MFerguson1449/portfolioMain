@@ -67,7 +67,7 @@ a:visited, a:link {
   color: white;
 }
 
-a:after {
+.navBar a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -111,7 +111,6 @@ a:hover:after {
   font-family: "baron_neueregular", sans-serif;
   width: 100%;
   border-top: 6px solid #57D0AF;
-  height: 8%;
   background-color: rgba(0, 0, 0, 0);
   transition: ease 1s;
   z-index: 2;
@@ -136,8 +135,8 @@ a:hover:after {
 }
 #landing .navBar .navName {
   position: absolute;
+  transform: translateY(-140%);
   right: -50%;
-  bottom: 26%;
   padding-right: 0.5%;
   transition: ease 0.6s;
   height: 29px;
@@ -145,7 +144,7 @@ a:hover:after {
 #landing .landingName {
   font-family: "baron_neuebold", sans-serif;
   position: absolute;
-  transform: translateY(200%);
+  bottom: 15%;
   letter-spacing: 2px;
 }
 #landing .landingName h1 {
@@ -160,7 +159,6 @@ a:hover:after {
 
 .content {
   background: white;
-  height: 1080px;
 }
 .content #skills, .content #experience, .content #contact {
   height: 1000px;
@@ -168,6 +166,55 @@ a:hover:after {
 }
 .content #skills {
   margin-top: 250px;
+}
+
+.footer {
+  background: #57D0AF;
+  color: black;
+  display: flex;
+  letter-spacing: 1.5px;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .footerContact {
+  background: black;
+  width: 60%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 40px;
+  transform: translateY(-50%);
+  color: white;
+}
+.footer .footerContact h6 {
+  width: 20%;
+}
+.footer .footerContact .chatButton {
+  font-size: 1.6rem;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-shadow: none;
+  border-color: #57D0AF;
+  border-style: solid;
+  border-radius: 30px;
+  cursor: pointer;
+  outline: none;
+}
+.footer .footerContact a:hover .chatButton {
+  background-color: #57D0AF;
+  color: black;
+}
+.footer .footerBlurb {
+  width: 25%;
+  padding: 20px;
+  font-family: "baron_neueregular", sans-serif;
+  margin-bottom: 1%;
+}
+.footer p {
+  font-size: 1.4rem;
+  padding: 20px;
 }
 
 /*# sourceMappingURL=/style.e0c02e61.css.map */
