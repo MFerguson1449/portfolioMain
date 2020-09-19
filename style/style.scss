@@ -171,8 +171,58 @@ a:visited, a:link {
 
 .content {
    background: white;
+   #contact {
+      margin: 5% 0% 5% 0%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: $styleFontBlack;
+      h3 {
+         border-bottom: $mainBlue solid 6px;
+      }
+      .contactGroup {
+         width: 100%;
+         margin-top: 5%;
+         font-family: $styleFont;
+         letter-spacing: 1.1px;
+         text-transform: lowercase;
+         display: grid;
+         justify-content: center;
+         grid-template-columns: repeat(3, 300px);
+         grid-gap: 8%;
+         grid-template-areas:
+            "a b c";
+         .contactBox {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #5d5d5d;
+         }
+         .linkedin {
+            grid-area: a;
+         }
+         .github {
+            grid-area: b;
+         }
+         .email {
+            grid-area: c;
+         }
+         .contactCircle {
+            background-color: black;
+            border-radius: 100% 100% 100% 100%;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid $mainBlue;
+            margin-bottom: 7%;
+         }
+      }
+   }
    // Temp Start //
-   #skills, #experience, #contact {
+   #skills, #experience {
       height: 1000px;
       padding-top: 100px;
    }

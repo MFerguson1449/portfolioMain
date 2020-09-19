@@ -160,7 +160,56 @@ a:hover:after {
 .content {
   background: white;
 }
-.content #skills, .content #experience, .content #contact {
+.content #contact {
+  margin: 5% 0% 5% 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "baron_neueblack", sans-serif;
+}
+.content #contact h3 {
+  border-bottom: #57D0AF solid 6px;
+}
+.content #contact .contactGroup {
+  width: 100%;
+  margin-top: 5%;
+  font-family: "baron_neueregular", sans-serif;
+  letter-spacing: 1.1px;
+  text-transform: lowercase;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 300px);
+  grid-gap: 8%;
+  grid-template-areas: "a b c";
+}
+.content #contact .contactGroup .contactBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #5d5d5d;
+}
+.content #contact .contactGroup .linkedin {
+  grid-area: a;
+}
+.content #contact .contactGroup .github {
+  grid-area: b;
+}
+.content #contact .contactGroup .email {
+  grid-area: c;
+}
+.content #contact .contactGroup .contactCircle {
+  background-color: black;
+  border-radius: 100% 100% 100% 100%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #57D0AF;
+  margin-bottom: 7%;
+}
+.content #skills, .content #experience {
   height: 1000px;
   padding-top: 100px;
 }
