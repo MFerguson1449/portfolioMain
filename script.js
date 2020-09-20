@@ -1,5 +1,4 @@
-console.log('it works!');
-
+// ***Nav Bar Animation*** ///
 const navBar = document.querySelector(".navBar");
 const navName = document.querySelector(".navName");
 window.onscroll = function() {
