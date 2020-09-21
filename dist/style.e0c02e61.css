@@ -16,6 +16,10 @@
   font-weight: normal;
   font-style: normal;
 }
+body {
+  overflow-x: hidden;
+}
+
 html {
   font-size: 10px;
   font-family: "Raleway", sans-serif;
@@ -214,8 +218,8 @@ a:hover:after {
 .content #experience .projectGroup {
   display: grid;
   justify-content: center;
-  grid-template-columns: 400px 400px;
-  grid-template-rows: 265px 265px;
+  grid-template-columns: 600px 600px;
+  grid-template-rows: 400px 400px;
   grid-gap: 20px;
   grid-template-areas: "a b" "c d";
 }
@@ -256,7 +260,7 @@ a:hover:after {
   font-family: "baron_neueregular", sans-serif;
   text-transform: lowercase;
   line-height: 2.5em;
-  border: 8px solid #57D0AF;
+  border: 10px solid #57D0AF;
   transition: ease 0.3s;
 }
 .content #experience .projectGroup .projectOverlay p {

@@ -27,6 +27,10 @@
 
 }
 
+body {
+   overflow-x:hidden;
+}
+
 html { 
    font-size: 10px;
    font-family: $mainFont;
@@ -228,8 +232,8 @@ a:visited, a:link {
       .projectGroup {
          display: grid;
          justify-content: center;
-         grid-template-columns: 400px 400px;
-         grid-template-rows: 265px 265px;
+         grid-template-columns: 600px 600px;
+         grid-template-rows: 400px 400px;
          grid-gap: 20px;
          grid-template-areas:
             "a b"
@@ -271,7 +275,7 @@ a:visited, a:link {
             font-family: $styleFont;
             text-transform: lowercase;
             line-height: 2.5em;
-            border: 8px solid $mainBlue;
+            border: 10px solid $mainBlue;
             transition: ease 0.3s;
             p {
                font-size: 1.4rem;
