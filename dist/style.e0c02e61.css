@@ -71,6 +71,12 @@ a:visited, a:link {
   color: white;
 }
 
+#particles-js {
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
 .navBar a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
