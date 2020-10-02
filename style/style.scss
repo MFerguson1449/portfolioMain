@@ -87,6 +87,7 @@ a:visited, a:link {
    height: 100%;
    width: 100%;
    position: fixed;
+   z-index: 0;
 }
 .navBar a:after {    
    background: none repeat scroll 0 0 transparent;
@@ -98,7 +99,6 @@ a:visited, a:link {
    position: absolute;
    background: $mainBlue;
    transition: 0.3s ease 0s, right 1s ease 0s;
-   width: 0;
  }
 
  a:hover:after { 
@@ -135,6 +135,11 @@ a:visited, a:link {
       transition: ease 1s;
       z-index: 2;
       letter-spacing: 2px;
+      text-shadow:
+          0.07em 0 black,
+          0 0.07em black,
+          -0.07em 0 black,
+          0 -0.07em black;
       .navButtons {
          width: 40%;
          ul { 
@@ -166,6 +171,11 @@ a:visited, a:link {
       position: absolute;
       bottom: 15%;
       letter-spacing: 2px;
+      text-shadow:
+          0.07em 0 rgba(0, 0, 0, 0.8),
+          0 0.07em rgba(0, 0, 0, 0.8),
+          -0.07em 0 rgba(0, 0, 0, 0.8),
+          0 -0.07em rgba(0, 0, 0, 0.8);
       
       h1 {
          color: white;
@@ -180,6 +190,7 @@ a:visited, a:link {
 }
 
 .content {
+   z-index: 2;
    background: white;
    .titleText {
       border-bottom: $mainBlue solid 6px;
@@ -230,6 +241,7 @@ a:visited, a:link {
             align-items: center;
             border: 3px solid $mainBlue;
             margin-bottom: 7%;
+            z-index: 2;
          }
       }
    }

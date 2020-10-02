@@ -1895,7 +1895,7 @@ function navColor() {
 particlesJS('particles-js', {
   "particles": {
     "number": {
-      "value": 200,
+      "value": 230,
       "density": {
         "enable": true,
         "value_area": 800
@@ -1911,7 +1911,7 @@ particlesJS('particles-js', {
         "color": "#000000"
       },
       "polygon": {
-        "nb_sides": 5
+        "nb_sides": 8
       },
       "image": {
         "src": "img/github.svg",
@@ -1920,7 +1920,7 @@ particlesJS('particles-js', {
       }
     },
     "opacity": {
-      "value": 0.7,
+      "value": 0.6,
       "random": true,
       "anim": {
         "enable": false,
@@ -1930,7 +1930,7 @@ particlesJS('particles-js', {
       }
     },
     "size": {
-      "value": 3,
+      "value": 2.5,
       "random": true,
       "anim": {
         "enable": false,
@@ -2036,7 +2036,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "28894" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "31506" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
