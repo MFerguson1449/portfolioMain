@@ -18,9 +18,11 @@
 }
 body {
   overflow-x: hidden;
+  height: 100%;
 }
 
 html {
+  height: 100%;
   font-size: 10px;
   font-family: "Raleway", sans-serif;
   text-align: center;
@@ -73,9 +75,11 @@ a:visited, a:link {
 
 #particles-js {
   background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
-  position: fixed;
   z-index: 0;
 }
 
@@ -124,7 +128,7 @@ a:hover:after {
   border-top: 6px solid #57D0AF;
   background-color: rgba(0, 0, 0, 0);
   transition: ease 1s;
-  z-index: 2;
+  z-index: 3;
   letter-spacing: 2px;
   text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
 }
@@ -171,7 +175,7 @@ a:hover:after {
 }
 
 .content {
-  z-index: 2;
+  z-index: 1;
   background: white;
 }
 .content .titleText {
@@ -179,7 +183,30 @@ a:hover:after {
   text-transform: uppercase;
   font-family: "baron_neueblack", sans-serif;
   display: inline-block;
-  margin: 8% 0% 5% 0%;
+  margin: 5% 0% 5% 0%;
+}
+.content #about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "baron_neueregular", sans-serif;
+  text-transform: lowercase;
+}
+.content #about .bio {
+  display: flex;
+  flex-direction: row;
+  width: 1070px;
+  text-align: left;
+  line-height: 22px;
+  letter-spacing: 1.5px;
+}
+.content #about .bio img {
+  max-height: 400px;
+}
+.content #about .bio p {
+  font-size: 1.4rem;
+  margin-left: 7%;
+  color: #909090;
 }
 .content #contact {
   display: flex;
@@ -188,7 +215,6 @@ a:hover:after {
 }
 .content #contact .contactGroup {
   width: 100%;
-  margin-top: 5%;
   font-family: "baron_neueregular", sans-serif;
   letter-spacing: 1.1px;
   text-transform: lowercase;
@@ -229,8 +255,8 @@ a:hover:after {
 .content #experience .projectGroup {
   display: grid;
   justify-content: center;
-  grid-template-columns: 600px 600px;
-  grid-template-rows: 400px 400px;
+  grid-template-columns: 525px 525px;
+  grid-template-rows: 350px 350px;
   grid-gap: 20px;
   grid-template-areas: "a b" "c d";
 }
