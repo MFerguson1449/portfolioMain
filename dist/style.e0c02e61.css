@@ -312,11 +312,28 @@ a:hover:after {
   opacity: 1;
 }
 .content #skills {
-  height: 1000px;
-  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.content #skills {
-  margin-top: 250px;
+.content #skills .skillBox {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10%;
+  width: 60%;
+}
+.content #skills .skillBox img {
+  size: 80%;
+}
+.content #skills .skillGroup {
+  padding: 8%;
+  border: 1px solid black;
+}
+.content #skills .skillGroup ul {
+  list-style-type: none;
+  font-size: 1.6rem;
+  line-height: 28px;
 }
 
 .footer {

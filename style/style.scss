@@ -335,15 +335,30 @@ a:visited, a:link {
          }
       }
    }
-   // Temp Start //
    #skills {
-      height: 1000px;
-      padding-top: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .skillBox {
+         display: flex;
+         flex-direction: row;
+         margin-bottom: 10%;
+         width: 60%;
+         img {
+            size: 80%;
+         }
+      }
+      .skillGroup {
+         padding: 8%;
+         border: 1px solid black;
+         ul {
+         list-style-type: none;
+         font-size: 1.6rem;
+         line-height: 28px;
+         }
+      }
    }
-   #skills {
-      margin-top: 250px;
-   }
-   // Temp End //
 }
 
 .footer {
