@@ -311,29 +311,48 @@ a:hover:after {
 .content #experience .projectGroup .projectOverlay:hover {
   opacity: 1;
 }
-.content #skills {
+.content #skills .skillsMain {
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 10%;
+  background: #57D0AF;
+  z-index: 0;
 }
 .content #skills .skillBox {
   display: flex;
   flex-direction: row;
-  margin-bottom: 10%;
-  width: 60%;
+  justify-content: center;
+  height: 100%;
+  background: white;
+  z-index: 1;
+  border: 1px solid #E6ECF8;
 }
 .content #skills .skillBox img {
   size: 80%;
 }
+.content #skills .frontEnd, .content #skills .sourceControl, .content #skills .uiUx {
+  border-right: 1px solid #E6ECF8;
+}
 .content #skills .skillGroup {
-  padding: 8%;
-  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-collapse: collapse;
+  width: 300px;
+  padding: 5% 0% 10% 0%;
 }
 .content #skills .skillGroup ul {
   list-style-type: none;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   line-height: 28px;
+  margin-top: 5%;
+}
+.content #skills img {
+  width: 20%;
+  margin: 10% 0px 10% 0px;
+  height: auto;
 }
 
 .footer {
