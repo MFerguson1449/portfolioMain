@@ -329,7 +329,14 @@ a:visited, a:link {
                color: $mainBlue;
                font-family: $styleFontBlack;
                margin-bottom: 1%;
-            }   
+            }  
+            .overlayIcons {
+               display: flex;
+               justify-content: center;
+               a {
+                  margin: 5px 15px;
+               }
+            } 
          }
          .projectOverlay:hover {
             opacity: 1;

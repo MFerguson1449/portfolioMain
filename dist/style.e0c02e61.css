@@ -309,6 +309,13 @@ a:hover:after {
   font-family: "baron_neueblack", sans-serif;
   margin-bottom: 1%;
 }
+.content #experience .projectGroup .projectOverlay .overlayIcons {
+  display: flex;
+  justify-content: center;
+}
+.content #experience .projectGroup .projectOverlay .overlayIcons a {
+  margin: 5px 15px;
+}
 .content #experience .projectGroup .projectOverlay:hover {
   opacity: 1;
 }
