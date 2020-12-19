@@ -212,6 +212,7 @@ a:hover:after {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 10%;
 }
 .content #contact .contactGroup {
   width: 100%;
@@ -258,7 +259,7 @@ a:hover:after {
   grid-template-columns: 525px 525px;
   grid-template-rows: 350px 350px;
   grid-gap: 20px;
-  grid-template-areas: "a b" "c d";
+  grid-template-areas: "d b" "c a";
 }
 .content #experience .projectGroup img {
   width: 100%;
@@ -316,7 +317,6 @@ a:hover:after {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10%;
   background: #57D0AF;
   z-index: 0;
 }
@@ -353,6 +353,51 @@ a:hover:after {
   width: 20%;
   margin: 10% 0px 10% 0px;
   height: auto;
+}
+.content #contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10%;
+}
+.content #contact .contactGroup {
+  width: 100%;
+  font-family: "baron_neueregular", sans-serif;
+  letter-spacing: 1.1px;
+  text-transform: lowercase;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 300px);
+  grid-gap: 8%;
+  grid-template-areas: "a b c";
+}
+.content #contact .contactGroup .contactBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #5d5d5d;
+}
+.content #contact .contactGroup .linkedin {
+  grid-area: a;
+}
+.content #contact .contactGroup .github {
+  grid-area: b;
+}
+.content #contact .contactGroup .email {
+  grid-area: c;
+}
+.content #contact .contactGroup .contactCircle {
+  background-color: black;
+  border-radius: 100% 100% 100% 100%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #57D0AF;
+  margin-bottom: 7%;
+  z-index: 2;
 }
 
 .footer {
