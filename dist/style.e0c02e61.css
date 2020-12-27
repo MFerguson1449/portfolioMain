@@ -147,7 +147,7 @@ a:hover:after {
   padding: 20px 0;
 }
 #landing .navBar .navButtons a {
-  margin: 0 50px;
+  margin: 0 5em;
 }
 #landing .navBar .navName {
   position: absolute;
@@ -195,13 +195,14 @@ a:hover:after {
 .content #about .bio {
   display: flex;
   flex-direction: row;
-  width: 1070px;
+  width: 80vw;
   text-align: left;
   line-height: 22px;
   letter-spacing: 1.5px;
 }
 .content #about .bio img {
-  max-height: 400px;
+  max-height: 100%;
+  max-width: 300px;
 }
 .content #about .bio p {
   font-size: 1.4rem;
@@ -454,6 +455,47 @@ a:hover:after {
 .footer p {
   font-size: 1.4rem;
   padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  h6 {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 500%;
+  }
+
+  #landing .navBar {
+    width: 100%;
+  }
+  #landing .navBar .navButtons li {
+    width: 20%;
+  }
+  #landing .navBar .navButtons a {
+    margin: 0 0;
+    padding: 0 15px;
+  }
+
+  .content #about {
+    margin: auto;
+  }
+  .content #about .bio {
+    width: 100vw;
+    flex-direction: column;
+  }
+  .content #about .bio img {
+    width: 80%;
+    height: 110%;
+    margin: auto;
+    padding-top: 5%;
+    padding-bottom: 10%;
+  }
+  .content #about .bio p {
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=/style.e0c02e61.css.map */
