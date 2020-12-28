@@ -495,14 +495,21 @@ a:visited, a:link {
    #landing {
       .navBar {
          width: 100vw;
-         .navButtons {   
+         .navButtons {
+            width: 100%;
+            ul {
+               display: grid;
+               grid-auto-flow: column;
+            }
             li {
-               width: 20%;
+               display: inline-block;
             }
             a {
-               margin: 0 0;
-               padding: 0 15px;
+               margin: 0;
             }
+         }
+         .navName {
+            display: none;
          }
       }
    }

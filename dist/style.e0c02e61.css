@@ -467,12 +467,21 @@ a:hover:after {
   #landing .navBar {
     width: 100vw;
   }
+  #landing .navBar .navButtons {
+    width: 100%;
+  }
+  #landing .navBar .navButtons ul {
+    display: grid;
+    grid-auto-flow: column;
+  }
   #landing .navBar .navButtons li {
-    width: 20%;
+    display: inline-block;
   }
   #landing .navBar .navButtons a {
-    margin: 0 0;
-    padding: 0 15px;
+    margin: 0;
+  }
+  #landing .navBar .navName {
+    display: none;
   }
 
   .content {
