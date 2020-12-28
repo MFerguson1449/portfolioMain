@@ -257,8 +257,6 @@ a:hover:after {
 .content #experience .projectGroup {
   display: grid;
   justify-content: center;
-  grid-template-columns: 525px 525px;
-  grid-template-rows: 350px 350px;
   grid-gap: 20px;
   grid-template-areas: "d b" "c a";
 }
@@ -467,7 +465,7 @@ a:hover:after {
   }
 
   #landing .navBar {
-    width: 100%;
+    width: 100vw;
   }
   #landing .navBar .navButtons li {
     width: 20%;
@@ -477,8 +475,12 @@ a:hover:after {
     padding: 0 15px;
   }
 
+  .content {
+    width: 100vw;
+  }
   .content #about {
     margin: auto;
+    margin-top: 20%;
   }
   .content #about .bio {
     width: 100vw;
@@ -495,6 +497,48 @@ a:hover:after {
     width: 80vw;
     margin: auto;
     text-align: center;
+  }
+  .content #experience {
+    margin: auto;
+    margin-top: 20%;
+  }
+  .content #experience .projectGroup {
+    grid-template-areas: "d" "b" "c" "a";
+    width: 90vw;
+    margin: auto;
+  }
+  .content #contact {
+    margin-top: 20%;
+  }
+  .content #contact .contactGroup {
+    grid-template-areas: "a" "b" "c";
+    grid-template-columns: 0;
+  }
+  .content #contact .contactGroup h6 {
+    margin-top: 5%;
+    font-size: 1.2rem;
+  }
+  .content #skills {
+    display: none;
+  }
+
+  .footer {
+    margin-top: 40%;
+    background: black;
+    color: white;
+  }
+  .footer .footerContact {
+    width: 100%;
+    border-radius: 0;
+    flex-direction: column;
+    transform: translateY(10%);
+  }
+  .footer .footerContact h6 {
+    width: 75%;
+    margin: 8% 0;
+  }
+  .footer .footerBlurb {
+    width: 90%;
   }
 }
 
