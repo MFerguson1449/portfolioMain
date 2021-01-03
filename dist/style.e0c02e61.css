@@ -470,6 +470,9 @@ a:hover:after {
   #landing .navBar .navButtons {
     width: 100%;
   }
+  #landing .navBar .navButtons .skillsHeadButton {
+    display: none;
+  }
   #landing .navBar .navButtons ul {
     display: grid;
     grid-auto-flow: column;
@@ -523,16 +526,21 @@ a:hover:after {
     grid-template-areas: "a" "b" "c";
     grid-template-columns: 0;
   }
+  .content #contact .contactGroup .contactBox {
+    margin-top: 25px;
+  }
+  .content #contact .contactGroup .contactCircle {
+    margin-bottom: 10px;
+  }
   .content #contact .contactGroup h6 {
-    margin-top: 5%;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
   .content #skills {
     display: none;
   }
 
   .footer {
-    margin-top: 40%;
+    margin-top: 50%;
     background: black;
     color: white;
   }
@@ -544,10 +552,11 @@ a:hover:after {
   }
   .footer .footerContact h6 {
     width: 75%;
-    margin: 8% 0;
+    margin: 6% 0;
   }
   .footer .footerBlurb {
     width: 90%;
+    padding: 50px 0;
   }
 }
 
