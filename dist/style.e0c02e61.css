@@ -329,17 +329,17 @@ a:hover:after {
 .content #skills .skillBox {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  height: 100%;
-  background: white;
+  justify-content: space-evenly;
+  width: 80%;
   z-index: 1;
-  border: 1px solid #E6ECF8;
 }
 .content #skills .skillBox img {
   size: 80%;
 }
 .content #skills .frontEnd, .content #skills .sourceControl, .content #skills .uiUx {
-  border-right: 1px solid #E6ECF8;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 .content #skills .skillGroup {
   display: flex;
@@ -348,6 +348,9 @@ a:hover:after {
   border-collapse: collapse;
   width: 300px;
   padding: 5% 0% 10% 0%;
+  background: white;
+  margin: 2% 0;
+  border: 2px solid #E6ECF8;
 }
 .content #skills .skillGroup ul {
   list-style-type: none;

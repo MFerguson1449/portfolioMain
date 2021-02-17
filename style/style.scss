@@ -354,17 +354,17 @@ a:visited, a:link {
       .skillBox {
          display: flex;
          flex-direction: row;
-         justify-content: center;
-         height: 100%;
-         background: white;
+         justify-content: space-evenly;
+         width: 80%;
          z-index: 1;
-         border: 1px solid $grey;
          img {
             size: 80%;
          }
       }
       .frontEnd, .sourceControl, .uiUx {
-         border-right: 1px solid $grey;
+         display: flex;
+         justify-content: center;
+         align-content: center;
       }
       .skillGroup {
          display: flex;
@@ -373,6 +373,9 @@ a:visited, a:link {
          border-collapse: collapse;
          width: 300px;
          padding: 5% 0% 10% 0%;
+         background: white;
+         margin: 2% 0;
+         border: 2px solid $grey;
          ul {
          list-style-type: none;
          font-size: 1.5rem;
