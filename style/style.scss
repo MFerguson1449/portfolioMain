@@ -358,10 +358,9 @@ a:visited, a:link {
          grid-template-columns: repeat(3, 1fr);
          align-items: center;
          justify-content: center;
-         grid-gap: 20px;
+         grid-gap: 60px;
          img {
             size: 80%;
-            outline: none;
          }
       }
       .skillGroup {
