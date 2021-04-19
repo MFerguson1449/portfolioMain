@@ -17,6 +17,20 @@ function navColor() {
     }
 }
 
+// !Mini Projects Modal! //
+const miniProjectopenButton = document.querySelector('#modalOpen');
+
+function handleImageClick() {
+  console.log('It worked!');
+}
+
+miniProjectopenButton.addEventListener('click', handleImageClick);
+
+// TODO Fixed 'open modal' button size, add 'Open Modal' functionality
+
+
+
+
 particlesJS('particles-js',
   
   {

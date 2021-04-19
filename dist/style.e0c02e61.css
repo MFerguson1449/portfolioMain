@@ -163,6 +163,7 @@ a:hover:after {
   bottom: 15%;
   letter-spacing: 2px;
   text-shadow: 0.07em 0 rgba(0, 0, 0, 0.8), 0 0.07em rgba(0, 0, 0, 0.8), -0.07em 0 rgba(0, 0, 0, 0.8), 0 -0.07em rgba(0, 0, 0, 0.8);
+  pointer-events: none;
 }
 #landing .landingName h1 {
   color: white;
@@ -452,6 +453,34 @@ a:hover:after {
 .footer p {
   font-size: 1.4rem;
   padding: 20px;
+}
+
+.miniModalOuter {
+  display: grid;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+.miniModalOuter .miniModalInner {
+  background: white;
+  min-height: 50vh;
+  min-width: 40vw;
+  max-width: 60vw;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.miniModalOuter.open {
+  opacity: 1;
+  pointer-events: all;
+  transition: opacity 0.2s;
 }
 
 @media only screen and (max-width: 600px) {

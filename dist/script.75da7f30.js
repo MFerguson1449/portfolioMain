@@ -1890,8 +1890,16 @@ function navColor() {
     navBar.style.backgroundColor = 'rgba(0, 0, 0, 0)';
     navName.style.right = '-50%';
   }
+} // !Mini Projects Modal! //
+
+
+var miniProjectopenButton = document.querySelector('#modalOpen');
+
+function handleImageClick() {
+  console.log('It worked!');
 }
 
+miniProjectopenButton.addEventListener('click', handleImageClick);
 particlesJS('particles-js', {
   "particles": {
     "number": {
@@ -2036,7 +2044,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51058" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57206" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
