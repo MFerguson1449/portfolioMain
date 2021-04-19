@@ -330,10 +330,12 @@ a:visited, a:link {
                margin-bottom: 1%;
             }  
             .overlayIcons {
-               display: flex;
-               justify-content: center;
-               a {
-                  margin: 5px 15px;
+               display: grid;
+               place-items: center;
+               grid-template-columns: 1fr 1fr;
+               grid-gap: 20px;
+               img {
+                  cursor: pointer;
                }
             } 
          }
@@ -483,6 +485,7 @@ a:visited, a:link {
    }
 }
 
+// !Mini Projects Modal! //
 .miniModalOuter {
    display: grid;
    position: fixed;
@@ -501,7 +504,7 @@ a:visited, a:link {
       min-width: 40vw;
       max-width: 60vw;
       padding: 2rem;
-      border-radius: 5px;
+      border-radiu: 5px;
    }
 }
 .miniModalOuter.open {

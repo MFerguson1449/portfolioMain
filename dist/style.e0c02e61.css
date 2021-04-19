@@ -310,11 +310,13 @@ a:hover:after {
   margin-bottom: 1%;
 }
 .content #experience .projectGroup .projectOverlay .overlayIcons {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
 }
-.content #experience .projectGroup .projectOverlay .overlayIcons a {
-  margin: 5px 15px;
+.content #experience .projectGroup .projectOverlay .overlayIcons img {
+  cursor: pointer;
 }
 .content #experience .projectGroup .projectOverlay:hover {
   opacity: 1;
@@ -474,7 +476,7 @@ a:hover:after {
   min-width: 40vw;
   max-width: 60vw;
   padding: 2rem;
-  border-radius: 5px;
+  border-radiu: 5px;
 }
 
 .miniModalOuter.open {

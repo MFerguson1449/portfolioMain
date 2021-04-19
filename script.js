@@ -18,13 +18,15 @@ function navColor() {
 }
 
 // !Mini Projects Modal! //
-const miniProjectopenButton = document.querySelector('#modalOpen');
+const miniProjectOpenButton = document.querySelector('#modalOpen');
+const miniModalOuter = document.querySelector('.miniModalOuter');
 
 function handleImageClick() {
+  miniModalOuter.classList.add('open');
   console.log('It worked!');
 }
 
-miniProjectopenButton.addEventListener('click', handleImageClick);
+miniProjectOpenButton.addEventListener('click', handleImageClick);
 
 // TODO Fixed 'open modal' button size, add 'Open Modal' functionality
 
