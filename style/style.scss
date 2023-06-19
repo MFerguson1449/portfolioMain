@@ -278,10 +278,13 @@ a:visited, a:link {
       .projectGroup {
          display: grid;
          justify-content: center; 
-         grid-gap: 20px;
+         grid-gap: 30px;
          grid-template-areas:
             "d c"
             "b a";
+         .projectCard {
+            border-radius: 30px;
+         }
          img {
             width: 100%;
             height: 100%;
@@ -289,8 +292,13 @@ a:visited, a:link {
          .projectBox {
             position: relative;
             z-index: 0;
+            max-width: 600px;
+
+            h5 {
+               margin-top: 20px;
+            }
          }
-         .comingSoon {
+         .etchy {
             grid-area: a;
          }
          .murf {
@@ -313,22 +321,26 @@ a:visited, a:link {
             flex-direction: column;
             width: 100%;
             height: 100%;;
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(0, 0, 0, 1);
             transition: ease 2ms;
             color: white;
             font-family: $styleFont;
             text-transform: lowercase;
             line-height: 2.5em;
-            border: 10px solid $mainBlue;
             transition: ease 0.3s;
+            border-radius: 30px;
             p {
                font-size: 1.4rem;
             }
-            h4 {
+            h3 {
                color: $mainBlue;
                font-family: $styleFontBlack;
                margin-bottom: 1%;
-            }  
+            }
+            h5 {
+               font-style: underline;
+               font-family: $styleFontBlack;
+            }
             .overlayIcons {
                display: grid;
                place-items: center;
@@ -379,7 +391,6 @@ a:visited, a:link {
          height: 100%;
          padding: 50px 0px;
          min-width: 275px;
-         border-radius: 30px;
          ul {
             list-style-type: none;
             font-size: 1.5rem;
@@ -489,34 +500,6 @@ a:visited, a:link {
       font-size: 1.4rem;
       padding: 20px;
    }
-}
-
-// !Mini Projects Modal! //
-.miniModalOuter {
-   display: grid;
-   position: fixed;
-   width: 100vw;
-   height: 100vh;
-   background: hsla(100, 0%, 0%, 0.7);
-   justify-content: center;
-   align-items: center;
-   top: 0;
-   left: 0;
-   opacity: 0;
-   pointer-events: none;
-   .miniModalInner {
-      background: white;
-      min-height: 50vh;
-      min-width: 40vw;
-      max-width: 60vw;
-      padding: 2rem;
-      border-radius: 5px;
-   }
-}
-.miniModalOuter.open {
-   opacity: 1;
-   pointer-events: all;
-   transition: opacity 0.2s;
 }
 
 // ! Media Queries ! //
